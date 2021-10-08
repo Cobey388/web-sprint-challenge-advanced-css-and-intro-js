@@ -250,10 +250,13 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   const bornIn = [];
   for(let i = 0; array.length > i; i++){
-    //if(array[i].years)
+    if(array[i].years.split = '1900 - 2000'){
+      bornIn.push(array[i].name)
+    } 
   }
+  return bornIn;
 }
-
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
