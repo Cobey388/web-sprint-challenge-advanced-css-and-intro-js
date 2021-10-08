@@ -248,8 +248,10 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  let bornIn = array.split('1900-2000')
-  return get20s;
+  const bornIn = [];
+  for(let i = 0; array.length > i; i++){
+    //if(array[i].years)
+  }
 }
 
 
@@ -303,12 +305,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array) {
   const moreThan100 = [];
   for(let i = 0;array.length > i; i++){
-    if array[i].paintings >= 100;
-    array.push(moreThan100);
+    if (array[i].paintings >= 100){
+    moreThan100.push(array[i].name);
   }
-  
+  }
+  return moreThan100;
 }
-
+console.log(lotsOfArt(artists));
 
 
 
